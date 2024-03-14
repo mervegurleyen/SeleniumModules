@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        h1 {
+          background-color: blue;
+          color: white;
+        }
+
+        #firstParagraph {
+          color: red;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+        }
+
+        .itemYellow {
+            color: yellow;
+        }
+
+        .padding {
+            padding: 5px;
+        }
+
+
+    </style>
 </head>
 <body>
-
-<h1>Selenium module 2</h1>
-<p>Selenium is an automation tool that automates user interactions with web applications </p>
+<h1>Selenium Lesson!</h1>
+<p id="firstParagraph" >Selenium is an automation tool that automates user interactions with web applications.</p>
 <h3>This is a cool page!</h3>
 
+<!--
+   <ol> -> ordered list where all the li(list items) will have some kind of numeration
+   <ul> -> unordered list where all items have simple bullet points
+   -->
 <ol>
-
-    <b><i>To-do List: </i></b>
-    <li>Do some coding</li>
-    <li>Do some homework</li>
-    <li>Get some sleep</li>
-    <li>Repeat</li>
-
+    <b><i>TO DO:</i></b>
+    <li class="itemYellow">Do some coding!</li>
+    <li class="itemYellow">Do the homework!</li>
+    <li class="itemYellow">Get some sleep!</li>
+    <li>Repeat...</li>
 </ol>
 
+
+<p id="secondParagraph"  >This form is for you to login</p>
 <form>
-    <div>
-        <h3>Login Form:</h3>
-
+    <div class="padding">
+        <h2>Login Form:</h2>
     </div>
-
-    Email:  <input type="email" placeholder="Enter Your Email...">
-    Password <input type="password" placeholder="Enter Your Password...">
-    <button>Login</button>
-
+    <div class="padding">
+        Email: <input type="email" placeholder="enter your email...">
+    </div>
+    <div class="padding">
+        Password: <input type="password" placeholder="enter your password...">
+    </div>
+    <div class="padding">
+        <button>Login</button>
+    </div>
 </form>
 
 <a href="https://www.google.com/">Navigate to Google...</a>
+<a href="https://www.yoll.io/">Click Me!</a>
+
 </body>
 </html>

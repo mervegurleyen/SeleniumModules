@@ -9,20 +9,25 @@ public class GetPageInfo {
 
     public static void main(String[] args) {
 
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        String url="http://dev-hrm.yoll.io/";
+        String url = "http://dev-hrm.yoll.io/";
         driver.get(url);
 
-        String title=driver.getTitle();
-        System.out.println("Page title: "+title);
+        String title = driver.getTitle();
+        System.out.println("Page title: " + title);
 
-        String currentUrl=driver.getCurrentUrl();
-        System.out.println("Actual url: "+ currentUrl);
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println("Actual url: " + currentUrl);
+
 
         driver.quit();
 
+    }
 
+    public static void get(){
+
+        System.out.println("fgd");
     }
 }
