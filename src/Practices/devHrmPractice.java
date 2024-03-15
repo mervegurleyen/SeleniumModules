@@ -51,12 +51,13 @@ public class devHrmPractice {
 
         String expectedHeader="Dashboard";
         WebElement pageHeader=driver.findElement(By.xpath("//div[@class='head']//h1"));
-System.out.println(pageHeader);
-//        if (expectedHeader.equals(pageHeader)){
-//            System.out.println("TEST: PASSED");
-//        }else {
-//            System.out.println("TEST: FAILED");
-//        }
+
+//System.out.println(pageHeader.getText());
+        if (expectedHeader.equals(pageHeader.getText())){
+            System.out.println("TEST: PASSED");
+        }else {
+            System.out.println("TEST: FAILED");
+        }
 
          driver.quit();
 
